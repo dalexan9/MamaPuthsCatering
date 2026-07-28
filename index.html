@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mama Puth's Catering</title>
+    <meta name="author" content="Danna Malave" />
+    <meta
+      name="keywords"
+      content="Cambodian catering, event catering, wedding catering, corporate catering, Rhode Island catering"
+    />
+    <meta
+      name="description"
+      content="Mama Puth's Catering provides authentic Cambodian catering for weddings, corporate events, and private celebrations in Rhode Island."
+    />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/se_project_2_files/logo_coffeeshop_dark.svg"
+            alt="Mama Puth's Catering logo"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li>
+              <a href="#orders" class="nav__link">Catering Inquiry</a>
+            </li>
+            <li>
+              <a href="services.html" class="nav__link">Services</a>
+            </li>
+            <li>
+              <a href="#menu" class="nav__link">Menu</a>
+            </li>
+            <li>
+              <a href="#contacts" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__title">
+          <span class="header__span-accent">MAMA PUTH CATERING EVENTS</span>
+          “Presentation is key to a plate you serve” ~ Than (mama) Puth
+        </h1>
+        <p class="header__description">
+          Culturally inspired catering event services in Rhode Island.
+        </p>
+        <img
+          src="./images/steamtrays.png.png"
+          alt="catering food trays"
+          class="header__image"
+        />
+        <div class="header__footer">
+          <p class="header__paragraph">
+            Serving events throughout Rhode Island and nearby communities
+          </p>
+        </div>
+      </header>
+
+      <main>
+        <section id="orders" class="order">
+          <h2 class="order__title">Catering Request Form</h2>
+          <p class="order__note">
+            Please fill out the form below; our team will respond within 24
+            hours.
+          </p>
+          <form class="order__form form">
+            <fieldset class="form__fieldset">
+              <label for="name" class="form__label">
+                Name *
+                <input
+                  required
+                  id="name"
+                  type="text"
+                  class="form__input"
+                  placeholder="Firstname Lastname"
+                />
+              </label>
+              <label for="number-of-guest" class="form__label">
+                Number of guest *
+                <input
+                  required
+                  id="number-of-guest"
+                  type="number"
+                  class="form__input"
+                  min="1"
+                  max="100"
+                  placeholder="# Of Guest"
+                />
+              </label>
+              <label for="date-time" class="form__label">
+                Date & Time *
+                <input
+                  required
+                  type="datetime-local"
+                  class="form__input"
+                  id="date-time"
+                />
+              </label>
+
+              <label for="email" class="form__label">
+                Your Email *
+                <input
+                  required
+                  id="email"
+                  type="email"
+                  class="form__input"
+                  placeholder="email@email.com"
+                />
+              </label>
+              <label for="phone-number" class="form__label">
+                Phone Number *
+                <input
+                  required
+                  id="phone-number"
+                  type="tel"
+                  class="form__input"
+                  placeholder="(XXX) XXX-XXXX"
+                />
+              </label>
+              <label for="event-type" class="form__label">
+                Event Type *
+                <input
+                  required
+                  type="text"
+                  class="form__input"
+                  id="event-type"
+                  placeholder="Wedding, Party, Corporate Event"
+                />
+              </label>
+              <label for="notes-or-comments" class="form__label">
+                Notes or Comments *
+                <textarea
+                  required
+                  id="notes-or-comments"
+                  class="form__input"
+                  rows="4"
+                  placeholder="Tell us about allergies, dietary needs, or requests"
+                ></textarea>
+              </label>
+            </fieldset>
+            <button type="submit" class="form__button">Request Catering</button>
+            <label class="form__label form__label_type_checkbox">
+              <input required type="checkbox" class="form__checkbox" />
+              I agree with the terms of use
+            </label>
+            <p class="form__note">
+              For every booking or order with Mama Puth Catering Events, 10% of
+              proceeds support local communities and charities such as St.
+              Jude’s Children Hospital, Wheels for the World, and overseas
+              charitable organizations.
+            </p>
+          </form>
+        </section>
+        <section id="menu" class="menu">
+          <h2 class="menu__title">Service and Menu</h2>
+          <p class="menu__subtitle">
+            Drop Off Catering, Full Catering, Event Décor Add-ons, and seasonal
+            menu selections.
+          </p>
+          <a href="services.html" class="menu__link"
+            >See full service offerings</a
+          >
+          <ul class="menu__cards">
+            <li class="card">
+              <h3 class="card__title">Appetizers</h3>
+              <ul class="card__list">
+                <li class="card__list-item">Cambodian egg rolls</li>
+                <li class="card__list-item">Shrimp rolls</li>
+                <li class="card__list-item">Cambodian beef teriyaki sticks</li>
+                <li class="card__list-item">
+                  Chicken wings (crispy or grilled lemongrass) with garlic &
+                  jalapeños
+                </li>
+              </ul>
+            </li>
+            <li class="card">
+              <h3 class="card__title">Salads</h3>
+              <ul class="card__list">
+                <li class="card__list-item">Cambodian chicken salad</li>
+                <li class="card__list-item">
+                  Cambodian Steak Loc Lac with romaine, cucumbers, tomatoes,
+                  onion, cilantro, and lime black pepper sauce
+                </li>
+              </ul>
+            </li>
+            <li class="card">
+              <h3 class="card__title">Signature Entrees</h3>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Curry rock crab with ginger, baby corn, and quail eggs
+                </li>
+                <li class="card__list-item">
+                  Cambodian fried fish with ginger, scallions, and fermented
+                  soybean
+                </li>
+                <li class="card__list-item">
+                  Crispy fried fish with mango salad and tamarind sauce
+                </li>
+                <li class="card__list-item">Cambodian Curry Chicken</li>
+                <li class="card__list-item">Cambodian Beef Stew</li>
+              </ul>
+            </li>
+            <li class="card">
+              <h3 class="card__title">Rice & Noodle</h3>
+              <ul class="card__list">
+                <li class="card__list-item">Jasmine White Rice</li>
+                <li class="card__list-item">
+                  Fried Rice (any choice of protein)
+                </li>
+                <li class="card__list-item">Lo Mein (any choice of protein)</li>
+              </ul>
+            </li>
+            <li class="card">
+              <h3 class="card__title">Sides & Drinks</h3>
+              <ul class="card__list">
+                <li class="card__list-item">Sauteed string beans</li>
+                <li class="card__list-item">
+                  Grilled corn on the cob or without cob, drizzled with coconut
+                  cream & scallions
+                </li>
+                <li class="card__list-item">Cambodian iced coffee</li>
+                <li class="card__list-item">Ovaltine (iced or hot)</li>
+                <li class="card__list-item">
+                  Monthly special juice with fresh fruits
+                </li>
+              </ul>
+            </li>
+            <li class="card">
+              <h3 class="card__title">Desserts</h3>
+              <ul class="card__list">
+                <li class="card__list-item">Cambodian exotic fruit salad</li>
+                <li class="card__list-item">
+                  Sticky rice with mango, sesame seeds, and coconut cream
+                </li>
+                <li class="card__list-item">
+                  Tapioca jelly with coconut cream
+                </li>
+              </ul>
+            </li>
+            <li class="card">
+              <h3 class="card__title">Catering Packages</h3>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Silver: 1 appetizer, 2 entrees, 2 sides, rice, beverage
+                </li>
+                <li class="card__list-item">
+                  Gold: 2 appetizers, 3 entrees, 2 sides or 2 rice/noodles,
+                  dessert, beverage
+                </li>
+                <li class="card__list-item">
+                  Platinum: full buffet with optional serving staff
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="about">
+          <h2 class="about__title">About Mama Puth Catering Events</h2>
+          <div class="about__content">
+            <p class="about__paragraph">
+              Mama Puth Catering Events is dedicated to preserving generational
+              recipes and offering refined event decoration for gatherings of
+              any size—from intimate family occasions to large-scale
+              celebrations. Our services extend to family events, church
+              functions, non-profit initiatives, and business gatherings.
+            </p>
+            <p class="about__paragraph">
+              We strive to make every event distinctive by blending exceptional
+              cuisine, elegant presentation, and meticulous attention to detail.
+              Years of experience have cultivated a passion for designing
+              memorable meals and sophisticated event settings.
+            </p>
+            <p class="about__paragraph">
+              Through both culinary artistry and tasteful décor, we transform
+              ordinary occasions into extraordinary experiences.
+            </p>
+            <p class="about__paragraph">
+              For every booking or order with Mama Puth Catering Events, 10% of
+              proceeds will go to support local communities and charities such
+              as St. Jude’s Children Hospital, Wheels for the World, and
+              overseas charitable organizations. Thank you for selecting Mama
+              Puth Catering Events. Blessings!
+            </p>
+          </div>
+          <div class="about__circle"></div>
+          <div class="about__circle about__circle_animation_blurred"></div>
+        </section>
+      </main>
+      <footer id="contacts" class="footer">
+        <div class="footer__content">
+          <img
+            src="./images/se_project_2_files/logo_coffeeshop_light.svg"
+            alt="Mama Puth's Catering logo"
+            class="footer__logo"
+          />
+          <div class="footer__column">
+            <h3 class="footer__column-heading">Contact</h3>
+            <p class="footer__paragraph">Phone: (401) 555-0123</p>
+            <p class="footer__paragraph">Email: hello@mamapuths.com</p>
+            <p class="footer__paragraph">Serving events across Rhode Island</p>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__column-heading">Social media</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link"
+                  ><img
+                    src="./images/se_project_2_files/facebook_white.svg"
+                    alt="facebook icon"
+                    class="footer__social-icon"
+                  />facebook</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link"
+                  ><img
+                    src="./images/se_project_2_files/instagram_white.svg"
+                    alt="Instagram icon"
+                    class="footer__social-icon"
+                  />Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">Mama Puth's Catering &copy;</p>
+      </footer>
+    </div>
+  </body>
+</html>

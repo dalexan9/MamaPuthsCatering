@@ -1,0 +1,31 @@
+.order {
+  background-color: transparent;
+  background-image: none;
+  padding: 100px 0 120px;
+}
+
+.order__title {
+  margin: 0 0 80px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.order__note {
+  max-width: 520px;
+  margin: 0 auto 60px;
+  color: #d8d4ff;
+  font-family: "noto serif", "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.order__form {
+  margin: 0 auto;
+  max-width: 520px;
+}
