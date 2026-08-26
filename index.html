@@ -14,7 +14,7 @@
       content="Mama Puth's Catering provides authentic Cambodian catering for weddings, corporate events, and private celebrations in Rhode Island."
     />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/mamaicon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +27,7 @@
       <header class="header">
         <nav class="nav">
           <img
-            src="./images/se_project_2_files/logo_coffeeshop_dark.svg"
+            src="./images/mamaicon.png"
             alt="Mama Puth's Catering logo"
             class="nav__logo"
           />
@@ -36,10 +36,10 @@
               <a href="#orders" class="nav__link">Catering Inquiry</a>
             </li>
             <li>
-              <a href="services.html" class="nav__link">Services</a>
+              <a href="#menu" class="nav__link">Menu</a>
             </li>
             <li>
-              <a href="#menu" class="nav__link">Menu</a>
+              <a href="services.html" class="nav__link">Services</a>
             </li>
             <li>
               <a href="#contacts" class="nav__link">Contact</a>
@@ -47,15 +47,15 @@
           </ul>
         </nav>
         <h1 class="header__title">
-          <span class="header__span-accent">MAMA PUTH CATERING EVENTS</span>
+          <span class="header__span-accent">Mama Puth Catering Events</span>
           “Presentation is key to a plate you serve” ~ Than (mama) Puth
         </h1>
         <p class="header__description">
           Culturally inspired catering event services in Rhode Island.
         </p>
         <img
-          src="./images/steamtrays.png.png"
-          alt="catering food trays"
+          src="./images/containers.png.png"
+          alt="catering food containers"
           class="header__image"
         />
         <div class="header__footer">
@@ -72,13 +72,22 @@
             Please fill out the form below; our team will respond within 24
             hours.
           </p>
-          <form class="order__form form">
+          <form
+            class="order__form form"
+            action="https://formsubmit.co/mamaputhcateringevents@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <input type="hidden" name="_subject" value="New Catering Inquiry" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
             <fieldset class="form__fieldset">
               <label for="name" class="form__label">
                 Name *
                 <input
                   required
                   id="name"
+                  name="name"
                   type="text"
                   class="form__input"
                   placeholder="Firstname Lastname"
@@ -89,6 +98,7 @@
                 <input
                   required
                   id="number-of-guest"
+                  name="guests"
                   type="number"
                   class="form__input"
                   min="1"
@@ -103,6 +113,7 @@
                   type="datetime-local"
                   class="form__input"
                   id="date-time"
+                  name="date_time"
                 />
               </label>
 
@@ -111,6 +122,7 @@
                 <input
                   required
                   id="email"
+                  name="email"
                   type="email"
                   class="form__input"
                   placeholder="email@email.com"
@@ -121,6 +133,7 @@
                 <input
                   required
                   id="phone-number"
+                  name="phone"
                   type="tel"
                   class="form__input"
                   placeholder="(XXX) XXX-XXXX"
@@ -133,6 +146,7 @@
                   type="text"
                   class="form__input"
                   id="event-type"
+                  name="event_type"
                   placeholder="Wedding, Party, Corporate Event"
                 />
               </label>
@@ -141,6 +155,7 @@
                 <textarea
                   required
                   id="notes-or-comments"
+                  name="notes"
                   class="form__input"
                   rows="4"
                   placeholder="Tell us about allergies, dietary needs, or requests"
@@ -298,32 +313,31 @@
       <footer id="contacts" class="footer">
         <div class="footer__content">
           <img
-            src="./images/se_project_2_files/logo_coffeeshop_light.svg"
+            src="./images/mamaicon.png"
             alt="Mama Puth's Catering logo"
             class="footer__logo"
           />
           <div class="footer__column">
             <h3 class="footer__column-heading">Contact</h3>
-            <p class="footer__paragraph">Phone: (401) 555-0123</p>
-            <p class="footer__paragraph">Email: hello@mamapuths.com</p>
+            <p class="footer__paragraph">
+              Email:
+              <a href="mailto:mamaputhcateringevents@gmail.com"
+                >mamaputhcateringevents@gmail.com</a
+              >
+            </p>
             <p class="footer__paragraph">Serving events across Rhode Island</p>
           </div>
           <div class="footer__column">
             <h3 class="footer__column-heading">Social media</h3>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a href="#" class="footer__social-link"
+                <a
+                  href="https://www.instagram.com/mamaputhcatering/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__social-link"
                   ><img
-                    src="./images/se_project_2_files/facebook_white.svg"
-                    alt="facebook icon"
-                    class="footer__social-icon"
-                  />facebook</a
-                >
-              </li>
-              <li class="footer__list-item">
-                <a href="#" class="footer__social-link"
-                  ><img
-                    src="./images/se_project_2_files/instagram_white.svg"
+                    src="./images/instagram_white.svg"
                     alt="Instagram icon"
                     class="footer__social-icon"
                   />Instagram</a
@@ -331,6 +345,21 @@
               </li>
             </ul>
           </div>
+        </div>
+        <div class="footer__trust">
+          <h3 class="footer__column-heading">Trusted</h3>
+          <ul class="footer__trust-list">
+            <li class="footer__trust-item">RIDOH Food Manager Certified</li>
+            <li class="footer__trust-item">Self Serv Certified</li>
+            <li class="footer__trust-item">Licensed Commercial Kitchen</li>
+            <li class="footer__trust-item">Minority Woman- Owned Business</li>
+            <li class="footer__trust-item">Community Centered</li>
+          </ul>
+          <p class="footer__quote">
+            Trusted to serve every guest with excellence, integrity, and
+            care—because presentation is key to every plate we serve. ~ Than
+            Puth
+          </p>
         </div>
         <p class="footer__copyright">Mama Puth's Catering &copy;</p>
       </footer>

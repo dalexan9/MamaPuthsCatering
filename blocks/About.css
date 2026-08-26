@@ -1,5 +1,9 @@
 .about {
-  background-color: transparent;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.02)
+  );
   color: #f5f5ff;
   padding: 100px 80px 173px;
   display: flex;
@@ -8,12 +12,15 @@
   position: relative;
   overflow: hidden;
   z-index: 2;
+  border-radius: 32px;
+  margin: 24px 0;
+  border: 1px solid rgba(244, 201, 93, 0.16);
 }
 
 .about__title {
   max-width: 251px;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 44px;
   line-height: 52px;
   margin: 0;
@@ -43,10 +50,16 @@
   top: -152px;
   left: -129px;
   border-radius: 50%;
-  background-color: #1878dc;
+  background: radial-gradient(
+    circle,
+    rgba(244, 201, 93, 0.95) 0%,
+    rgba(212, 175, 55, 0.7) 45%,
+    rgba(139, 101, 18, 0.2) 100%
+  );
   width: 426px;
   height: 426px;
   z-index: 1;
+  filter: blur(2px);
 }
 
 .about__circle_animation_blurred {
